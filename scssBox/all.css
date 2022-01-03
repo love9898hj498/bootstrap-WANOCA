@@ -12345,11 +12345,11 @@ body {
 }
 
 .bg-primary {
-  background-image: url("/img/asset 0.png");
+  background-image: url("/img/asset\ 0.png");
 }
 
 .bg-footer {
-  background-image: url("/img/asset 3.png");
+  background-image: url("/img/asset\ 3.png");
 }
 
 .bg-shadow {
