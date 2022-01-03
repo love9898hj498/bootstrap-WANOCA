@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scssBox/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@100;300;400;500;700900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+
+<body>
+        <div class="container-fluid p-0 position-relative">
+        <!-- nav -->
+        <nav>
+            <ul class="nav position-absolute z-99 p-5 d-flex aling-items-center">
+                <li class="nav-item">
+                    <a class="nav-link p-0" aria-current="page" href="javascript:;"><img src="img/logo.png"></a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link text-column link-dark" href="javascript:;">
+                        <span class="text-hover-line pe-1">和乃果について</span>
+                    </a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link text-column link-dark" href="javascript:;">
+                        <span class="text-hover-line pe-1">菓子の紹介</span>
+                    </a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link text-column link-dark" href="javascript:;">
+                        <span class="text-hover-line pe-1">所作</span>
+                    </a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link text-column link-dark" href="javascript:;">
+                        <span class="text-hover-line pe-1">果実</span>
+                    </a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link text-column link-dark" href="javascript:;">
+                        <span class="text-hover-line pe-1">お知らせ</span>
+                    </a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link text-column link-dark" href="javascript:;">
+                        <span class="text-hover-line pe-1">日々のこと</span>
+                    </a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link text-column link-dark" href="javascript:;">
+                        <span class="text-hover-line pe-1">店舗案内</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+        <!--sign-->
+        <div class="position-absolute z-99 end-0 top-0">
+            <div class="p-5">
+                <a class="text-decoration-none link-dark text-hover-primary" href="javascript:;">
+                    <i class="bi bi-person-fill px-2"></i><span class="pe-4">マイページ</span>
+                </a>
+                <a class="text-decoration-none link-dark text-hover-primary" href="javascript:;">
+                    <i class="bi bi-cart px-2"></i><span class="pe-5">カート</span>
+                </a>
+                <form class="input-group pt-3 position-relative">
+                    <input type="search" class="form-control border-0 shadow-none bg-transparent" placeholder="商品を検索">
+                    <span class="input-group-text bg-transparent border-0 position-absolute end-37px"><i class="bi bi-search"></i></span>
+                </form>
+            </div>
+        </div>
+        
+        <!-- 輪播底圖 -->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="img/asset 6.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block top-50 text-dark">
+                        <h1>果実を、菓実に。</h1>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/asset 7.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block top-50 text-dark">
+                        <h1>果実を、菓実に。</h1>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/asset 8.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block top-50 text-dark">
+                        <h1>果実を、菓実に。</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <div class="container-fluid py-5 bg-primary">
+            <div class="row">
+                <div class="col text-column d-flex justify-content-center flex-column">
+                    <span>ABOUT WANOCA</span>
+                    <h2 class="me-0 fw-bold">果実の魅力を限りなく</h2>
+                    <p class="lh-lg">
+                        フルーツの里、山梨<br>
+                        四季折々の豊かな実りに<br>
+                        感謝をこめて、<br>
+                        心と技でひと工夫。<br>
+                        果実のおいしさを<br>
+                        存分に引き出して、<br>
+                        素敵なお菓子に仕上げました。<br>
+                        果実の魅力を限りなく。</span></p>
+                    </p>
+                    <div>
+                        <a href="javascript:;" class="text-decoration-none text-hover-line-reverse pe-1">詳しく見る</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-10 col-md-12 d-flex justify-content-center">
+                    <div class="w-50 w-md-50 bg-dark rounded-circle">
+                        <img src="img/asset 11.png" class="w-100">
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="container-fluid pb-5 d-flex p-0">
+            <div class="row w-75 g-0">
+                <div class="col-lg-6 position-relative">
+                    <img src="img/asset 12.jpeg" class="w-100">
+                    <div class="position-absolute z-99 bottom-20 start-20 text-white">
+                        <h3 class="mb-0">はさむ</h3>
+                        <span>sandwich</span>
+                    </div>
+                    <div class="bg-shadow position-absolute z-99 top-0 text-white bg-gray w-100 h-100 d-flex align-items-center justify-content-center">
+                        <a href="javascript:;" class="text-decoration-none text-white">詳しく見る</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 position-relative">
+                    <img src="img/asset 13.jpeg" class="w-100">
+                    <div class="position-absolute z-99 bottom-20 start-20 text-white">
+                        <h3 class="mb-0">まく</h3>
+                        <span>ROLL</span>
+                    </div>
+                    <div class="bg-shadow position-absolute z-99 top-0 text-white bg-gray w-100 h-100 d-flex align-items-center 
+                    justify-content-center">
+                        <a href="javascript:;" class="text-decoration-none text-white">詳しく見る</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 position-relative">
+                    <img src="img/asset 14.jpeg" class="w-100">
+                    <div class="position-absolute z-99 bottom-20 start-20 text-white">
+                        <h3 class="mb-0">おす</h3>
+                        <span>PRESS</span>
+                    </div>
+                    <div class="bg-shadow position-absolute z-99 top-0 text-white bg-gray w-100 h-100 d-flex align-items-center 
+                    justify-content-center">
+                        <a href="javascript:;" class="text-decoration-none text-white">詳しく見る</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 position-relative">
+                    <img src="img/asset 15.jpeg" class="w-100">
+                    <div class="position-absolute z-99 bottom-20 start-20 text-white">
+                        <h3 class="mb-0">つつむ</h3>
+                        <span>WRAP</span>
+                    </div>
+                    <div class="bg-shadow position-absolute z-99 top-0 text-white bg-gray w-100 h-100 d-flex align-items-center 
+                    justify-content-center">
+                        <a href="javascript:;" class="text-decoration-none text-white">詳しく見る</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row w-25 align-items-center order-0">
+                <div class="col">
+                    <div class="p-5">
+                        <h2 class="text-column d-inline-block mx-0 pb-5 fs-1 fw-bold">所作</h2>
+                        <span class="text-column pb-5">CARRIAGE</span>
+                        <p>和乃果のお菓子は、手のお菓子。はさむ・まく・おす・つつむ。ひと手間かけて、手をかけて、果実の新しい口福を創っています。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-5">
+            <div class="row mb-5">
+                <div class="col-lg-6">
+                    <div class="d-flex pb-5">
+                        <h2 class="fs-1 text-column fw-bold m-0">果実</h2>
+                        <span class="text-column pt-1">FRUIT</span>
+                    </div>
+                    <p>和乃果のお菓子は、果実が主役。 山梨の自然の恵み・人の恵みに感謝して、 果実のおいしさを余す事なく活かしています。</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/asset 16.jpeg" class="w-100">
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col">
+                    <span>果実・素材一覧</span>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="row text-red-bg-shadow">
+                        <div class="col-5">
+                            <div class="rounded-circle overflow-hidden position-relative">
+                                <img src="img/asset 17.jpeg" class="w-100">
+                                <div class="bg-shadow-all position-absolute z-99 top-0 start-0 w-100 h-100"></div>
+                            </div>
+                        </div>
+                        <div class="col-5 align-items-center d-flex">
+                            <div class="ps-3">
+                                <span>莓</span>
+                                <p class="text-black-5 fs-7">STRAWBERRY</p>
+                            </div>
+                        </div>
+                        <div class="col-2 align-items-center d-flex text-center">
+                            <span class="rounded-circle  wh-20 ms-auto">></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="row text-red-bg-shadow">
+                        <div class="col-5">
+                            <div class="rounded-circle overflow-hidden position-relative">
+                                <img src="img/asset 18.jpeg" class="w-100">
+                                <div class="bg-shadow-all position-absolute z-99 top-0 start-0 w-100 h-100"></div>
+                            </div>
+                        </div>
+                        <div class="col-5 align-items-center d-flex">
+                            <div class="ps-3">
+                                <span>巨峰</span>
+                                <p class="text-black-5 fs-7">KYOHO</p>
+                            </div>
+                        </div>
+                        <div class="col-2 align-items-center d-flex text-center">
+                            <a href="javascript:;" class="rounded-circle text-decoration-none wh-20 ms-auto">></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="row text-red-bg-shadow">
+                        <div class="col-5">
+                            <div class="rounded-circle overflow-hidden position-relative">
+                                <img src="img/asset 19.jpeg" class="w-100">
+                                <div class="bg-shadow-all position-absolute z-99 top-0 start-0 w-100 h-100"></div>
+                            </div>
+                        </div>
+                        <div class="col-5 align-items-center d-flex">
+                            <div class="ps-3">
+                                <span>桃</span>
+                                <p class="text-black-5 fs-7">PEACH</p>
+                            </div>
+                        </div>
+                        <div class="col-2 align-items-center d-flex text-center">
+                            <a href="javascript:;" class="rounded-circle text-decoration-none wh-20 ms-auto">></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="row text-red-bg-shadow">
+                        <div class="col-5">
+                            <div class="rounded-circle overflow-hidden position-relative">
+                                <img src="img/asset 20.jpeg" class="w-100">
+                                <div class="bg-shadow-all position-absolute z-99 top-0 start-0 w-100 h-100"></div>
+                            </div>
+                        </div>
+                        <div class="col-5 align-items-center d-flex">
+                            <div class="ps-3">
+                                <span>柿</span>
+                                <p class="text-black-5 fs-7">PERSIMMON</p>
+                            </div>
+                        </div>
+                        <div class="col-2 align-items-center d-flex text-center">
+                            <a href="javascript:;" class="rounded-circle text-decoration-none wh-20 ms-auto">></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="row text-red-bg-shadow">
+                        <div class="col-5">
+                            <div class="rounded-circle overflow-hidden position-relative">
+                                <img src="img/asset 21.jpeg" class="w-100">
+                                <div class="bg-shadow-all position-absolute z-99 top-0 start-0 w-100 h-100"></div>
+                            </div>
+                        </div>
+                        <div class="col-5 align-items-center d-flex">
+                            <div class="ps-3">
+                                <span>シャインマスカット</span>
+                                <p class="text-black-5 fs-7">SHINE MUSCAT</p>
+                            </div>
+                        </div>
+                        <div class="col-2 align-items-center d-flex text-center">
+                            <a href="javascript:;" class="rounded-circle text-decoration-none wh-20 ms-auto">></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                                        <div class="row text-red-bg-shadow">
+                        <div class="col-5">
+                            <div class="rounded-circle overflow-hidden position-relative">
+                                <img src="img/asset 22.jpeg" class="w-100">
+                                <div class="bg-shadow-all position-absolute z-99 top-0 start-0 w-100 h-100"></div>
+                            </div>
+                        </div>
+                        <div class="col-5 align-items-center d-flex">
+                            <div class="ps-3">
+                                <span>ワインパミス</span>
+                                <p class="text-black-5 fs-7">WINE PUMICE</p>
+                            </div>
+                        </div>
+                        <div class="col-2 align-items-center d-flex text-center">
+                            <a href="javascript:;" class="rounded-circle text-decoration-none wh-20 ms-auto">></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="row text-red-bg-shadow">
+                        <div class="col-5">
+                            <div class="rounded-circle overflow-hidden position-relative">
+                                <img src="img/asset 23.jpeg" class="w-100">
+                                <div class="bg-shadow-all position-absolute z-99 top-0 start-0 w-100 h-100"></div>
+                            </div>
+                        </div>
+                        <div class="col-5 align-items-center d-flex">
+                            <div class="ps-3">
+                                <span>荏胡麻</span>
+                                <p class="text-black-5 fs-7">PERILLA</p>
+                            </div>
+                        </div>
+                        <div class="col-2 align-items-center d-flex text-center">
+                            <a href="javascript:;" class="rounded-circle text-decoration-none wh-20 ms-auto">></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="row text-red-bg-shadow">
+                        <div class="col-5">
+                            <div class="rounded-circle overflow-hidden position-relative">
+                                <img src="img/asset 24.jpeg" class="w-100">
+                                <div class="bg-shadow-all position-absolute z-99 top-0 start-0 w-100 h-100"></div>
+                            </div>
+                        </div>
+                        <div class="col-5 align-items-center d-flex">
+                            <div class="ps-3">
+                                <span>キウイ</span>
+                                <p class="text-black-5 fs-7">KIWI FRUIT</p>
+                            </div>
+                        </div>
+                        <div class="col-2 align-items-center d-flex text-center">
+                            <a href="javascript:;" class="rounded-circle text-decoration-none wh-20 ms-auto">></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="row text-red-bg-shadow">
+                        <div class="col-5">
+                            <div class="rounded-circle overflow-hidden position-relative">
+                                <img src="img/asset 25.jpeg" class="w-100">
+                                <div class="bg-shadow-all position-absolute z-99 top-0 start-0 w-100 h-100"></div>
+                            </div>
+                        </div>
+                        <div class="col-5 align-items-center d-flex">
+                            <div class="ps-3">
+                                <span>白ワイン</span>
+                                <p class="text-black-5 fs-7">WHITE WINE</p>
+                            </div>
+                        </div>
+                        <div class="col-2 align-items-center d-flex text-center">
+                            <a href="javascript:;" class="rounded-circle text-decoration-none wh-20 ms-auto">></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                <div class="row text-red-bg-shadow">
+                        <div class="col-5">
+                            <div class="rounded-circle overflow-hidden position-relative">
+                                <img src="img/asset 26.jpeg" class="w-100">
+                                <div class="bg-shadow-all position-absolute z-99 top-0 start-0 w-100 h-100"></div>
+                            </div>
+                        </div>
+                        <div class="col-5 align-items-center d-flex">
+                            <div class="ps-3">
+                                <span>赤ワイン</span>
+                                <p class="text-black-5 fs-7">RED WINE</p>
+                            </div>
+                        </div>
+                        <div class="col-2 align-items-center d-flex text-center">
+                            <a href="javascript:;" class="rounded-circle text-decoration-none wh-20 ms-auto">></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid py-5 d-flex bg-primary">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="position-relative">
+                            <img src="img/asset 27.jpeg" alt="">
+                            <div class="bg-shadow position-absolute z-99 top-0 text-white bg-gray w-100 h-100 d-flex align-items-center 
+                            justify-content-center">
+                                <a href="javascript:;" class="text-decoration-none text-white">詳しく見る</a>
+                            </div>
+                        </div>
+                        <div class="bg-primary text-hover-primary-txt pt-3">
+                            <p class="fs-6 m-0 fw-light">果実バターサンド</p>
+                            <p class="fs-6 fw-bold m-0">春香(はるか)</p>
+                            <span class="fs-7 m-0 fw-light">巨峰, 苺</span>
+                            <p class="fs-5 m-0">4,800<span class="fs-7">円(税込)</span></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="position-relative">
+                            <img src="img/asset 28.jpeg" alt="">
+                            <div class="bg-shadow position-absolute z-99 top-0 text-white bg-gray w-100 h-100 d-flex align-items-center 
+                            justify-content-center">
+                                <a href="javascript:;" class="text-decoration-none text-white">詳しく見る</a>
+                            </div>
+                        </div>
+                        <div class="bg-primary text-hover-primary-txt pt-3">
+                            <p class="fs-6 m-0 fw-light">果実バターサンド</p>
+                            <p class="fs-6 fw-bold m-0">春香(はるか)</p>
+                            <span class="fs-7 m-0 fw-light">巨峰, 苺, キウイ, 柿</span>
+                            <p class="fs-5 m-0">6,400<span class="fs-7">円(税込)</span></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="position-relative">
+                            <img src="img/asset 29.jpeg" alt="">
+                            <div class="bg-shadow position-absolute z-99 top-0 text-white bg-gray w-100 h-100 d-flex align-items-center 
+                            justify-content-center">
+                                <a href="javascript:;" class="text-decoration-none text-white">詳しく見る</a>
+                            </div>
+                        </div>
+                        <div class="bg-primary text-hover-primary-txt pt-3">
+                            <p class="fs-6 m-0 fw-light">果実バターサンド</p>
+                            <p class="fs-6 fw-bold m-0">春彩(さくら)</p>
+                            <span class="fs-7 m-0 fw-light">巨峰, 苺, キウイ</span>
+                            <p class="fs-5 m-0">3,800<span class="fs-7">円(税込)</span></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="position-relative">
+                            <img src="img/asset 30.jpeg" alt="">
+                            <div class="bg-shadow position-absolute z-99 top-0 text-white bg-gray w-100 h-100 d-flex align-items-center 
+                            justify-content-center">
+                                <a href="javascript:;" class="text-decoration-none text-white">詳しく見る</a>
+                            </div>
+                        </div>
+                        <div class="bg-primary text-hover-primary-txt pt-3">
+                            <p class="fs-6 m-0 fw-light">果実バターサンド</p>
+                            <p class="fs-6 fw-bold m-0">春彩(さくら)</p>
+                            <span class="fs-7 m-0 fw-light">巨峰, キウイ, 柿, 苺</span>
+                            <p class="fs-5 m-0">5,800<span class="fs-7">円(税込)</span></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="position-relative">
+                            <img src="img/asset 31.jpeg" alt="">
+                            <div class="bg-shadow position-absolute z-99 top-0 text-white bg-gray w-100 h-100 d-flex align-items-center 
+                            justify-content-center">
+                                <a href="javascript:;" class="text-decoration-none text-white">詳しく見る</a>
+                            </div>
+                        </div>
+                        <div class="bg-primary text-hover-primary-txt pt-3">
+                            <p class="fs-6 m-0 fw-light">果実干菓子</p>
+                            <p class="fs-6 fw-bold m-0">香莉(かおり)</p>
+                            <span class="fs-7 m-0 fw-light">苺, 桃</span>
+                            <p class="fs-5 m-0">4,500<span class="fs-7">円(税込)</span></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="position-relative">
+                            <img src="img/asset 32.jpeg" alt="">
+                            <div class="bg-shadow position-absolute z-99 top-0 text-white bg-gray w-100 h-100 d-flex align-items-center 
+                            justify-content-center">
+                                <a href="javascript:;" class="text-decoration-none text-white">詳しく見る</a>
+                            </div>
+                        </div>
+                        <div class="bg-primary text-hover-primary-txt pt-3">
+                            <p class="fs-6 m-0 fw-light">果実干菓子</p>
+                            <p class="fs-6 fw-bold m-0">香莉(かおり)</p>
+                            <span class="fs-7 m-0 fw-light">苺, 桃</span>
+                            <p class="fs-5 m-0">6,500<span class="fs-7">円(税込)</span></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="position-relative">
+                            <img src="img/asset 33.jpeg" alt="">
+                            <div class="bg-shadow position-absolute z-99 top-0 text-white bg-gray w-100 h-100 d-flex align-items-center 
+                            justify-content-center">
+                                <a href="javascript:;" class="text-decoration-none text-white">詳しく見る</a>
+                            </div>
+                        </div>
+                        <div class="bg-primary text-hover-primary-txt pt-3">
+                            <p class="fs-6 m-0 fw-light">果実ショコラ</p>
+                            <p class="fs-6 fw-bold m-0">凛花(りんか)</p>
+                            <span class="fs-7 m-0 fw-light">赤ワイン, 白ワイン, 苺, 荏胡麻</span>
+                            <p class="fs-5 m-0">4,200<span class="fs-7">円(税込)</span></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="position-relative">
+                            <img src="img/asset 34.jpeg" alt="">
+                            <div class="bg-shadow position-absolute z-99 top-0 text-white bg-gray w-100 h-100 d-flex align-items-center 
+                            justify-content-center">
+                                <a href="javascript:;" class="text-decoration-none text-white">詳しく見る</a>
+                            </div>
+                        </div>
+                        <div class="bg-primary text-hover-primary-txt pt-3">
+                            <p class="fs-6 m-0 fw-light">果実ショコラ</p>
+                            <p class="fs-6 fw-bold m-0">玲花(れいか)</p>
+                            <span class="fs-7 m-0 fw-light">赤ワイン, 白ワイン, 苺, 荏胡麻</span>
+                            <p class="fs-5 m-0">6,200<span class="fs-7">円(税込)</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination position-relative pt-5"></div>
+                <div class="d-flex justify-content-center">
+                    <a href="javascript:;" class="py-3 px-5 mt-5 text-decoration-none bg-white-hover">
+                        <span class="m-0 p-0">全ての商品を見る</span>
+                        <span class="wh-20-white rounded-circle d-inline-block text-center">></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-11 col-9">
+                    <div class="position-relative">
+                        <img src="img/asset 35.jpeg" class="w-100">
+                        <div class="bg-shadow position-absolute z-99 top-0 text-white bg-gray w-100 h-100 d-flex align-items-center 
+                        justify-content-center">
+                            <a href="javascript:;" class="text-decoration-none text-white">詳しく見る</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 col-3 text-column">
+                    <span>SHOP INFORMATION</span>
+                    <h2 class="fs-1 text-column fw-bold m-0">店舗案内</h2>
+                </div>
+            </div>
+
+            <div class="row mt-5 g-5">
+                <div class="col-md-7">
+                    <div class="pe-5 border-end">
+                        <h4 class="pb-3">「農」をコンセプトにした素朴でモダンなぬくもりある異空間。</h4>
+                        <p class="fs-6 lh-md">和乃果の本店は、日本の原風景が色濃く残る牧丘の丘に。一棟では日本最大級といわれる武家屋敷の一角に、建築家・甲斐晋介氏が手がけた和乃果の本    店。昔から使われている素材や手法を使って、新しいものを生み出してゆく人の手仕事が店内の随所に活かされています。裏庭へと続くダイナミックな間取りや、土を大胆に    活かした内装。山梨発、世界へ。お菓子の新たな息吹を、ぜひここで感じてください。</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="ps-md-5">
+                        <h5 class="pb-3 start-line">店舗情報</h5>
+                        <span class="lh-md">〒404-0004 <br>山梨県山梨市牧丘町西保下1126 [<a href="https://goo.gl/maps/KoS37u3ZFLGie9696" targer="_blank" class="text-dark">地図</a> ]   <br>
+                            電話 / <a href="javascript:;" class="text-decoration-none text-dark">090-1842-7110</a><br>
+                            営業時間 / 10:30 ～ 16:30<br>
+                            定休日 / 火曜</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex">
+                        <a href="javascript:;" class="py-3 px-5 mt-5 text-decoration-none bg-white-hover">
+                            <span class="m-0 px-3">詳しく見る</span>
+                            <span class="wh-20-white rounded-circle d-inline-block text-center">></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-5 px-0">
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <div class="pb-5">
+                        <span>BLOG</span>
+                        <h2>日々のこと</h2>
+                    </div>
+                    <div class="row align-items-center mb-5 ">
+                        <div class="col-5">
+                            <div class="position-relative">
+                                <img src="img/asset 37.jpeg" class="w-100">
+                                <div class="bg-shadow position-absolute z-99 top-0 start-0 w-100 h-100"></div>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <span>2021.06.15</span>
+                                
+                            <p>和乃果、和乃顔。vol.2</p>
+                                
+                            <a href="javascript:;" class="text-decoration-none">記事を見る</a>
+                        </div> 
+                    </div> 
+                    <div class="row">
+                        <div class="col">
+                            <a href="javascript:;" class="py-3 px-5 mt-5 text-decoration-none bg-white-hover">
+                                <span class="fs-7">過去の記事</span>
+                                <span class="wh-20-white rounded-circle d-inline-block text-center">></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="pb-5">
+                        <span>NEWS</span>
+                        <h2>お知らせ</h2>
+                    </div>
+
+                    <div class="mb-5">
+                        <a href="javascript:;" class="py-3 border border-end-0 border-start-0 d-block text-decoration-none text-dark">
+                            <span class="pe-3">2021.11.23</span>
+                            <span>年末年始休業のお知らせ</span>
+                        </a>
+                        <a href="javascript:;" class="py-3 border-end-0 border-start-0 d-block text-decoration-none text-dark">
+                            <span class="pe-3">2021.11.23</span>
+                            <span>営業時間変更のお知らせ</span>
+                        </a>
+                        <a href="javascript:;" class="py-3 border border-end-0 border-start-0 d-block text-decoration-none text-dark">
+                            <span class="pe-3">2021.11.23</span>
+                            <span>古屋絵菜個展「ゆらめく .」開催のお知らせ</span>
+                        </a>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <a href="javascript:;" class="py-3 px-5 mt-5 text-decoration-none bg-white-hover">
+                                <span class="fs-7">過去の記事</span>
+                                <span class="wh-20-white rounded-circle d-inline-block text-center">></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+
+        <div class="container-fluid py-5 bg-footer">
+            <div class="row text-white g-5 text-center justify-content-center">
+                <div class="col-md-2 col-5 footer-border-end">
+                    <img src="img/footer-logo.png" class="img-fluid">
+                </div>
+                <div class="col-md-2 footer-border">
+                    <a class="link-light text-decoration-none" href="javascript:;">
+                        <h6 class="text-gray-hover">菓子の紹介</h6>
+                    </a>
+                    <div class="pt-5 lh-md">
+                        <a class="text-column text-decoration-none align-top link-light text-white-hover-line-reverse" href="javascript:;">所作から選ぶ</a>
+                        <a class="text-column text-decoration-none align-top link-light text-white-hover-line-reverse" href="javascript:;">果実から選ぶ</a>
+                        <a class="text-column text-decoration-none align-top link-light text-white-hover-line-reverse" href="javascript:;">商品一覧</a>
+                    </div>
+                </div>
+                <div class="col-md-3 footer-border">
+                    <a class="link-light text-decoration-none" href="javascript:;">
+                        <h6 class="text-gray-hover">和乃果について</h6>
+                    </a>
+                    <div class="pt-5 lh-md">
+                        <a class="text-column text-decoration-none align-top link-light text-white-hover-line-reverse" href="javascript:;">お知らせ</a>
+                        <a class="text-column text-decoration-none align-top link-light text-white-hover-line-reverse" href="javascript:;">日々のこと</a>
+                        <a class="text-column text-decoration-none align-top link-light text-white-hover-line-reverse" href="javascript:;">店舗案内</a>
+                        <a class="text-column text-decoration-none align-top link-light text-white-hover-line-reverse" href="javascript:;">会社概要</a>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-border">
+                    <a class="link-light text-decoration-none" href="javascript:;">
+                        <h6 class="text-gray-hover">お買い物</h6>
+                    </a>
+                    <div class="pt-5 lh-md">
+                        <a class="text-column text-decoration-none align-top link-light text-white-hover-line-reverse" href="javascript:;">お知らせ</a>
+                        <a class="text-column text-decoration-none align-top link-light text-white-hover-line-reverse" href="javascript:;">日々のこと</a>
+                        <a class="text-column text-decoration-none align-top link-light text-white-hover-line-reverse" href="javascript:;">店舗案内</a>
+                        <a class="text-column text-decoration-none align-top link-light text-white-hover-line-reverse" href="javascript:;">会社概要</a>
+                    </div>
+                </div>
+                <div class="col-md-1 text-start align-middle d-flex justify-content-center flex-column">
+                    <a href="javascript:;" class="link-light text-decoration-none"><i class="bi bi-instagram text-gray-hover"></i></a>
+                    <a href="javascript:;" class="link-light text-decoration-none"><i class="bi bi-twitter text-gray-hover"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 4,
+          centeredSlides: true,
+          spaceBetween: 30,
+          grabCursor: true,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        });
+
+      </script>
+</body>
+
+</html>

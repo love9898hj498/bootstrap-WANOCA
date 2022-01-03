@@ -1,0 +1,9 @@
+@import "../node_modules/bootstrap/scss/functions";  //要擺前面
+
+@import "helpers/variables";        //引入variables 主要的樣式
+@import "helpers/utilities";
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "Self_made_scss/Self_made"
+
