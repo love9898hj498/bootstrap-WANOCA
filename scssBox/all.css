@@ -12345,11 +12345,11 @@ body {
 }
 
 .bg-primary {
-  background-image: url("/img/asset\ 0.png");
+  background-image: url("/img/asset 0.png");
 }
 
 .bg-footer {
-  background-image: url("/img/asset\ 3.png");
+  background-image: url("/img/asset 3.png");
 }
 
 .bg-shadow {
@@ -12450,6 +12450,10 @@ body {
 
 .footer-border-end {
   border-right: 1px solid #3e3e3e;
+}
+
+.footer-border-start {
+  border-left: 1px solid #000000;
 }
 
 .swiper {
