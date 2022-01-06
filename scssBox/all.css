@@ -12447,13 +12447,34 @@ body {
   border-right: 1px solid #3e3e3e;
   border-left: 1px solid #000000;
 }
+@media screen and (max-width: 767px) {
+  .footer-border {
+    border: none;
+  }
+}
 
 .footer-border-end {
   border-right: 1px solid #3e3e3e;
 }
+@media screen and (max-width: 767px) {
+  .footer-border-end {
+    border: none;
+  }
+}
 
 .footer-border-start {
   border-left: 1px solid #000000;
+}
+@media screen and (max-width: 767px) {
+  .footer-border-start {
+    border: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .lh-lg {
+    line-height: 0;
+  }
 }
 
 .swiper {

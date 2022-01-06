@@ -177,14 +177,29 @@ body{
 .footer-border{
     border-right: 1px solid #3e3e3e;
     border-left: 1px solid #000000;
+    @media screen and (max-width:767px) {
+        border: none;
+    }
 }
 
 .footer-border-end{
     border-right: 1px solid #3e3e3e;
+    @media screen and (max-width:767px) {
+        border: none;
+    }
 }
 
 .footer-border-start{
     border-left: 1px solid #000000;
+    @media screen and (max-width:767px) {
+        border: none;
+    }
+}
+
+.lh-lg{
+    @media screen and (max-width:767px) {
+        line-height: 0;
+    }
 }
 
 // 
